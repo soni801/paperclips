@@ -197,7 +197,7 @@ function cacheDOMElements(){
     tothDivElement =                    document.getElementById("tothDiv");
     strategyEngineElement =             document.getElementById("strategyEngine");
     tournamentManagementElement =       document.getElementById("tournamentManagement");
-    btnQcomputeElement =                document.getElementById("btnQcompute");
+    btnQcomputeElement =                document.getElementById("btnQCompute");
     qComputingElement =                 document.getElementById("qComputing");
     transWireElement =                  document.getElementById("transWire");
     processorDisplayElement =           document.getElementById("processorDisplay");
@@ -2829,7 +2829,8 @@ function updateSwarm(){
     
 }
 
-function synchSwarm(){
+function syncSwarm()
+{
         yomi = yomi - synchCost;
         yomiDisplayElement.innerHTML = formatWithCommas(yomi);
         disorgFlag = 0;
@@ -2838,7 +2839,12 @@ function synchSwarm(){
     
 }
 
-function entertainSwarm(){
+function feedSwarm(){}
+function teachSwarm(){}
+function cladSwarm(){}
+
+function entertainSwarm()
+{
         creativity = creativity - entertainCost;
         entertainCost = entertainCost + 10000;
         boredomFlag = 0;

@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style/interface.css?v2" />
         <link rel="stylesheet" type="text/css" href="style/new.css">
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -60,12 +62,11 @@
                 </div>
                 <div class = "toolTip">
                     <span id = "clipCountCrunched" class = "toolTipText">total clips produced</span>
-                    <h2>Paperclips: <span id="clips">0</span></h2>
+                    <h2 id="clipCountText">Paperclips: <span id="clips">0</span></h2>
+                    <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1)">Make Paperclip</button>
                 </div>
             </div>
             <div id="leftColumn">
-                <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1)">Make Paperclip</button><br>
-                <br>
                 <div id = "creationDiv">
                     <b>Manufacturing</b><br>
                     <hr>
@@ -293,15 +294,20 @@
                         <div id ="swarmStatusDiv">Status: <span id="swarmStatus">x </span></div>
                         <div id="giftTimer">Next gift in <span id="giftCountdown">17 seconds</span></div>
                         <div id="feedButtonDiv"><button class = "button2" id = "btnFeedSwarm" onclick = "feedSwarm()">Feed the Swarm</button> <br />
-                            Cost: <span id="swarmFeedCost">0</span> MWs</div>
+                            Cost: <span id="swarmFeedCost">0</span> MWs
+                        </div>
                         <div id="teachButtonDiv"><button class = "button2" id = "btnTeachSwarm" onclick = "teachSwarm()">Teach the Swarm</button><br />
-                            Cost: <span id="swarmFeedCost">0</span> MWs</div>
+                            Cost: <span id="swarmTeachCost">0</span> MWs
+                        </div>
                         <div id="entertainButtonDiv"><button class = "button2" id = "btnEntertainSwarm" onclick = "entertainSwarm()">Entertain the Swarm</button><br />
-                            Cost: <span id="swarmEntertainCost">0</span> creat</div>
+                            Cost: <span id="swarmEntertainCost">0</span> creat
+                        </div>
                         <div id="cladButtonDiv"><button class = "button2" id = "btnCladSwarm" onclick = "cladSwarm()">Clad the Swarm</button><br />
-                            Cost: <span id="swarmFeedCost">0</span> MWs</div>
-                        <div id="synchButtonDiv"><button class = "button2" id = "btnSyncSwarm" onclick = "synchSwarm()">Synchronize the Swarm</button><br />
-                            Cost: <span id="swarmFeedCost">5,000</span> yomi</div>
+                            Cost: <span id="swarmCladCost">0</span> MWs
+                        </div>
+                        <div id="syncButtonDiv"><button class = "button2" id = "btnSyncSwarm" onclick = "syncSwarm()">Synchronize the Swarm</button><br />
+                            Cost: <span id="swarmSyncCost">5,000</span> yomi
+                        </div>
                     </div>
                     <div id = "swarmSliderDiv">
                         <div id = "sliderLabelWork">Work</div>
@@ -323,7 +329,7 @@
                         <div class = "qChip" id = "qChip8"> </div>
                         <div class = "qChip" id = "qChip9"> </div>
                         <br />
-                        <button class = "button2" id = "btnQcompute" onclick = "qComp()">
+                        <button class = "button2" id = "btnQCompute" onclick = "qComp()">
                             Compute
                         </button>
                         <span id="qCompDisplay">
@@ -342,7 +348,7 @@
                 <div class = "engine" id="investmentEngine">
                     <p class = engineText>
                         <b>Investments</b>
-                        <select id = "investStrat">
+                        <label for="investStrat"></label><select id = "investStrat">
                             <option value="low">Low Risk</option>
                             <option value="med">Med Risk</option>
                             <option value="hi">High Risk</option>

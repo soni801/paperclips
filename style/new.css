@@ -1,0 +1,166 @@
+body
+{
+    background: #222;
+    font-family: 'Fira Sans', sans-serif;
+    color: #aaa;
+    user-select: none;
+}
+
+#consoleDiv
+{
+    background: #111;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#giftShopDiv
+{
+    background: none;
+    color: white;
+    padding: 10px;
+}
+
+#giftShopDiv a
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.consoleOld, .console
+{
+    padding-left: 10px;
+}
+
+.toolTip
+{
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#clipCountText
+{
+    padding-left: 10px;
+}
+
+#leftColumn, #middleColumn, #rightColumn
+{
+    background: #333;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#btnMakePaperclip
+{
+    margin-left: 20px;
+    background: #333;
+    padding: 7px 10px;
+}
+
+.button2, .button2:hover, .button2:active, .button2:disabled
+{
+    background: #222;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    padding: 4px 10px;
+    color: #ccc;
+    text-shadow: none;
+}
+
+.button2:hover
+{
+    background: #444;
+}
+
+.button2:active
+{
+    background: #111;
+}
+
+.button2:disabled
+{
+    background: #777;
+}
+
+#btnAddProc, #btnAddMem, #investmentDiv1
+{
+    width: unset;
+}
+
+hr
+{
+    margin: 10px 0;
+    border-color: #aaa;
+}
+
+.projectButton
+{
+    background: #444;
+    border: none;
+    border-radius: 15px;
+    color: inherit;
+}
+
+.qEngine
+{
+    background: #444;
+    padding: 10px;
+    border: none;
+    height: unset;
+    border-radius: 15px;
+}
+
+.qEngine b
+{
+    color: #ddd;
+}
+
+#btnQCompute
+{
+    margin-left: -10%;
+}
+
+.qChip
+{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.engine, .engine2
+{
+    background: #444;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0;
+}
+
+.engine b
+{
+    color: #ddd;
+}
+
+select
+{
+    background: #222;
+    border: none;
+    color: #ccc;
+    padding: 2px 7px;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 10px;
+}
+
+#stock1Display, #stock3Display, #stock5Display
+{
+    background: #555;
+}
+
+table.table2 td
+{
+    border-color: #555;
+}
