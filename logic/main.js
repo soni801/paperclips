@@ -255,7 +255,7 @@ function cacheDOMElements(){
     btnWireDronex100Element =           document.getElementById("btnWireDronex100");
     btnWireDronex1000Element =          document.getElementById("btnWireDronex1000");
     sliderElement =                     document.getElementById("slider");
-    btnSynchSwarmElement =              document.getElementById("btnSynchSwarm");
+    btnSynchSwarmElement =              document.getElementById("btnSyncSwarm");
     btnEntertainSwarmElement =          document.getElementById("btnEntertainSwarm");
     swarmSizeElement =                  document.getElementById("swarmSize");
     swarmGiftsElement =                 document.getElementById("swarmGifts");
