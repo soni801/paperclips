@@ -2829,6 +2829,14 @@ function updateSwarm(){
     
 }
 
+function toggleDev()
+{
+    const buttons = document.getElementById("devButtons");
+
+    if (buttons.style.display === "block") buttons.style.display = "none";
+    else buttons.style.display = "block";
+}
+
 function syncSwarm()
 {
         yomi = yomi - synchCost;
