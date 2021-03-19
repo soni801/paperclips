@@ -41,13 +41,20 @@ body
     align-items: center;
 }
 
-#leftColumn, #middleColumn, #rightColumn
+#leftColumn, #middleColumn, #rightColumn, #devColumn
 {
     background: #333;
     margin-top: 10px;
     padding: 10px;
     border-radius: 20px;
     box-shadow: #111 0 0 15px;
+}
+
+#devColumn
+{
+    float: left;
+    margin-left: 10px;
+    width: 250px;
 }
 
 #btnMakePaperclip
@@ -163,7 +170,7 @@ table.table2 td
     border-color: #555;
 }
 
-#clipCountCrunched, #devButtons
+#clipCountCrunched, #devColumn
 {
     display: none;
 }
@@ -173,7 +180,7 @@ table.table2 td
     text-shadow: #111 0 0 15px;
 }
 
-#devButtons button
+#devColumn button
 {
     background: #222;
     border: none;
@@ -186,12 +193,12 @@ table.table2 td
     margin-bottom: 5px;
 }
 
-#devButtons button:hover
+#devColumn button:hover
 {
     background: #444;
 }
 
-#devButtons button:active
+#devColumn button:active
 {
     background: #111;
 }

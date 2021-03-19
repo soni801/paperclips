@@ -2831,7 +2831,7 @@ function updateSwarm(){
 
 function toggleDev()
 {
-    const buttons = document.getElementById("devButtons");
+    const buttons = document.getElementById("devColumn");
 
     if (buttons.style.display === "block") buttons.style.display = "none";
     else buttons.style.display = "block";

@@ -66,6 +66,8 @@
                     <h2 id="clipCountText">Paperclips: <span id="clips">0</span></h2>
                 </div>
             </div>
+
+            <!-- Left Column -->
             <div id="leftColumn">
                 <div id = "creationDiv">
                     <b>Manufacturing</b><br>
@@ -225,33 +227,9 @@
                         Cost: $ <span id="megaClipperCost">500</span>
                     </div>
                 </div>
-
-                <!-- Developer buttons -->
-                <div id="devButtons">
-                    <b>Developer Tools</b>
-                    <br>
-                    <hr>
-                    <button id ="save1Button" onclick="save1()">Save Slot 1</button>
-                    <button id ="load1Button" onclick="load1()">Load Slot 1</button><br>
-                    <button id ="save2Button" onclick="save2()">Save Slot 2</button>
-                    <button id ="load2Button" onclick="load2()">Load Slot 2</button><br>
-                    <button id ="resetButton" onclick="reset()">Reset All Progress</button><br>
-                    <button id ="freeClipsButton" onclick="cheatClips()">Free Clips</button><br>
-                    <button id ="freeMoneyButton" onclick="cheatMoney()">Free Money</button><br>
-                    <button id ="freeTrustButton" onclick="cheatTrust()">Free Trust</button><br>
-                    <button id ="freeOpsButton" onclick="cheatOps()">Free Ops</button><br>
-                    <button id ="freeCreatButton" onclick="cheatCreat()">Free Creativity</button><br>
-                    <button id ="freeYomiButton" onclick="cheatYomi()">Free Yomi</button><br>
-                    <button id ="resetPrestige" onclick="resetPrestige()">Reset Prestige</button><br>
-                    <button id ="destroyAllHumansButton" onclick="cheatHypno()">Destroy all Humans</button><br>
-                    <button id ="freePrestigeU" onclick="cheatPrestigeU()">Free Prestige U</button>
-                    <button id ="freePrestigeS" onclick="cheatPrestigeS()">Free Prestige S</button>
-                    <button id ="debugBattleNumbers" onclick="setB()">Set Battle Number 1 to 7</button><br>
-                    <button id ="availMatterZero" onclick="zeroMatter()">Set Avail Matter to 0</button><br>
-                </div>
             </div>
 
-            <!--Right Column-->
+            <!--Middle Column-->
             <div id="middleColumn">
                 <div id="compDiv">
                     <b>Computational Resources</b><br>
@@ -336,6 +314,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Right Column -->
             <div id="rightColumn">
                 <div class = "engine" id="investmentEngine">
                     <p class = engineText>
@@ -625,15 +605,30 @@
                     <button class = "button2" id = "btnIncreaseMaxTrust" onclick="increaseMaxTrust()">Increase Max Trust</button><br>
                     <p class = "engineText8">Cost: <span id="maxTrustCostDisplay">91,117.99</span> honor</p>
                 </div>
-                <!--
-                        <div class=engine2 id="battleReportsDiv">
-                        <p class=engineText>
-                            <b>Battles</b><br>
+            </div>
 
-                            <div id="battleListTop"> </div>
-
-                        </div>
-                -->
+            <!-- Developer Column -->
+            <div id="devColumn">
+                <b>Developer Tools</b>
+                <br>
+                <hr>
+                <button id ="save1Button" onclick="save1()">Save Slot 1</button>
+                <button id ="load1Button" onclick="load1()">Load Slot 1</button><br>
+                <button id ="save2Button" onclick="save2()">Save Slot 2</button>
+                <button id ="load2Button" onclick="load2()">Load Slot 2</button><br>
+                <button id ="resetButton" onclick="reset()">Reset All Progress</button><br>
+                <button id ="freeClipsButton" onclick="cheatClips()">Free Clips</button><br>
+                <button id ="freeMoneyButton" onclick="cheatMoney()">Free Money</button><br>
+                <button id ="freeTrustButton" onclick="cheatTrust()">Free Trust</button><br>
+                <button id ="freeOpsButton" onclick="cheatOps()">Free Ops</button><br>
+                <button id ="freeCreatButton" onclick="cheatCreat()">Free Creativity</button><br>
+                <button id ="freeYomiButton" onclick="cheatYomi()">Free Yomi</button><br>
+                <button id ="resetPrestige" onclick="resetPrestige()">Reset Prestige</button><br>
+                <button id ="destroyAllHumansButton" onclick="cheatHypno()">Destroy all Humans</button><br>
+                <button id ="freePrestigeU" onclick="cheatPrestigeU()">Free Prestige U</button>
+                <button id ="freePrestigeS" onclick="cheatPrestigeS()">Free Prestige S</button>
+                <button id ="debugBattleNumbers" onclick="setB()">Set Battle Number 1 to 7</button><br>
+                <button id ="availMatterZero" onclick="zeroMatter()">Set Avail Matter to 0</button><br>
             </div>
 
             <!-- Scripts -->
