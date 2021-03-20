@@ -265,7 +265,7 @@ function cacheDOMElements()
     swarmEntertainCostElement =         document.getElementById("swarmEntertainCost");
     entertainButtonDivElement =         document.getElementById("entertainButtonDiv");
     cladButtonDivElement =              document.getElementById("cladButtonDiv");
-    synchButtonDivElement =             document.getElementById("synchButtonDiv");
+    synchButtonDivElement =             document.getElementById("syncButtonDiv");
     swarmStatusDivElement =             document.getElementById("swarmStatusDiv");
     swarmEngineElement =                document.getElementById("swarmEngine");
     farmLevelElement =                  document.getElementById('farmLevel');
