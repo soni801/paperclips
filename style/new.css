@@ -181,7 +181,7 @@ table.table2 td
     border-color: #555;
 }
 
-#clipCountCrunched, #devColumn
+#clipCountCrunched, #devColumn, #middleColumn, #rightColumn
 {
     display: none;
 }

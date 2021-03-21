@@ -1121,6 +1121,7 @@ function buttonUpdate()
     else {
         investmentEngineElement.style.display="";
         investmentEngineUpgradeElement.style.display="";
+        document.getElementById("rightColumn").style.display = "block";
     }
     if (strategyEngineFlag === 0)
     {
@@ -1163,6 +1164,7 @@ function buttonUpdate()
     }
     else {
         compDivElement.style.display="";
+        document.getElementById("middleColumn").style.display = "block";
     }
     if (creativityOn === 0)
     {
