@@ -135,11 +135,6 @@ hr
     color: #ddd;
 }
 
-#btnQCompute
-{
-    margin-left: -10%;
-}
-
 .qChip
 {
     margin-top: 5px;
@@ -184,6 +179,11 @@ table.table2 td
 #clipCountCrunched, #devColumn, #middleColumn, #rightColumn
 {
     display: none;
+}
+
+#middleColumn
+{
+    width: 280px;
 }
 
 #clipCountText
