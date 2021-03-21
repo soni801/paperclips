@@ -65,7 +65,7 @@ body
     box-shadow: #111 0 0 10px;
 }
 
-.button2, .button2:hover, .button2:active, .button2:disabled
+.button2, .button2:hover, .button2:active, .button2:disabled, #authorClose
 {
     background: #222;
     border: none;
@@ -74,14 +74,21 @@ body
     padding: 4px 10px;
     color: #ccc;
     text-shadow: none;
+    outline: none;
 }
 
-.button2:hover
+#authorClose
+{
+    background: #333;
+    padding: 7px 20px;
+}
+
+.button2:hover, #authorClose:hover
 {
     background: #444;
 }
 
-.button2:active
+.button2:active, #authorClose:active
 {
     background: #111;
 }
@@ -212,4 +219,67 @@ table.table2 td
 #devColumn button:active
 {
     background: #111;
+}
+
+#authorAlert
+{
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#authorPopup
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: #090909 0 0 20px;
+}
+
+#contact
+{
+    font-size: 12px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#originalLink
+{
+    color: #777;
+}
+
+#originalLink:hover
+{
+    color: #555;
+}
+
+#originalLink:active
+{
+    color: #333;
+}
+
+#contactLink
+{
+    color: #444;
+    text-decoration: underline;
+}
+
+#contactLink:hover
+{
+    color: #777;
+}
+
+#contactLink:active
+{
+    color: #333;
 }
