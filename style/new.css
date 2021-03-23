@@ -148,7 +148,7 @@ hr
     border-radius: 5px;
 }
 
-.engine, .engine2
+.engine, .engine2, .swarmEngine
 {
     background: #444;
     border: none;
@@ -180,7 +180,7 @@ select
 
 table.table2 td
 {
-    border-color: #555;
+    border: none;
 }
 
 #clipCountCrunched, #devColumn, #middleColumn, #rightColumn
@@ -282,4 +282,35 @@ table.table2 td
 #contactLink:active
 {
     color: #333;
+}
+
+#payoffCellAA, #payoffCellAB, #payoffCellBA, #payoffCellBB
+{
+    background-color: #555;
+    padding: 2px;
+}
+
+#payoffCellAA
+{
+    border-top-left-radius: 10px;
+}
+
+#payoffCellAB
+{
+    border-top-right-radius: 10px;
+}
+
+#payoffCellBA
+{
+    border-bottom-left-radius: 10px;
+}
+
+#payoffCellBB
+{
+    border-bottom-right-radius: 10px;
+}
+
+#swarmSliderDiv
+{
+    margin-top: 10px;
 }

@@ -2097,25 +2097,25 @@ function calcPayoff(hm, vm)
 {
     if (hm===1 && vm===1)
     {
-        payoffCellAAElement.style.backgroundColor = "LightGrey";
+        payoffCellAAElement.style.backgroundColor = "#777";
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueAA;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueAA;
     }
     else if (hm===1 && vm===2)
     {
-        payoffCellABElement.style.backgroundColor = "LightGrey";
+        payoffCellABElement.style.backgroundColor = "#777";
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueAB;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueBA;
     }
     else if (hm===2 && vm===1)
     {
-        payoffCellBAElement.style.backgroundColor = "LightGrey";
+        payoffCellBAElement.style.backgroundColor = "#777";
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueBA;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueAB;
     }
     else if (hm===2 && vm===2)
     {
-        payoffCellBBElement.style.backgroundColor = "LightGrey";
+        payoffCellBBElement.style.backgroundColor = "#777";
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueBB;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueBB;
     }
@@ -2147,10 +2147,10 @@ function round(roundNum)
     }
     function clearGrid()
     {
-        payoffCellAAElement.style.backgroundColor = "white";
-        payoffCellABElement.style.backgroundColor = "white";
-        payoffCellBAElement.style.backgroundColor = "white";
-        payoffCellBBElement.style.backgroundColor = "white";
+        payoffCellAAElement.style.backgroundColor = "#555";
+        payoffCellABElement.style.backgroundColor = "#555";
+        payoffCellBAElement.style.backgroundColor = "#555";
+        payoffCellBBElement.style.backgroundColor = "#555";
         setTimeout(function(){roundLoop();}, 50);
     }
     function runRound()
